@@ -11,6 +11,7 @@ public class AddCommands {
     ArrayList<CommandEntity> Commands = new ArrayList<>();
 
     public AddCommands() {
+        // todo dynamic class loading. (see fitforlife app for example)
         // here you add all your commands.
         Commands.add(new Help());
 
