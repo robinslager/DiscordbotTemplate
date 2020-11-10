@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Singleton {
         // static variable single_instance of type BotPackeges.Settings.Singleton
         private static Singleton single_instance = null;
-        // variable of type String
+
         public MessageReceivedEvent event;
         public DiscordVariables base;
         public JSONObject serverinfo;
@@ -49,6 +49,7 @@ public class Singleton {
             this.base = new DiscordVariables(this.event, null);
         }
 
+        // todo rethink this
         private void setServerinfo(){
             Guild guild;
             try {

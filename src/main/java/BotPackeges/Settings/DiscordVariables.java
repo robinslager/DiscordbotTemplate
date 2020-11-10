@@ -17,17 +17,7 @@ public class DiscordVariables {
 
     private MessageReceivedEvent msg = null;
     private GuildJoinEvent servr = null;
-
-    public String[] getArgs() {
-        return Args;
-    }
-
-    public int getArgs_length() {
-        return Args_length;
-    }
-
     public String[] Args;
-
     public int Args_length;
 
     public DiscordVariables(MessageReceivedEvent msg, GuildJoinEvent servr) {
@@ -104,6 +94,13 @@ public class DiscordVariables {
         return get_guild().getName();
     }
 
+    public String[] getArgs() {
+        return Args;
+    }
+
+    public int getArgs_length() {
+        return Args_length;
+    }
 
     public void sendmessage(String textsend) {
         if (msg != null) {
