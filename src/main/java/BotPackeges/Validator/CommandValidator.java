@@ -1,7 +1,7 @@
 package BotPackeges.Validator;
 
 import BotPackeges.DiscordEntity.CommandEntity;
-import BotPackeges.Validator.Singlevallidators.ArgumentValidator;
+
 import BotPackeges.Validator.Singlevallidators.PermissionValidator;
 
 public class CommandValidator {
@@ -18,7 +18,7 @@ public class CommandValidator {
     }
 
     public Boolean validate(){
-        if(new ArgumentValidator(Command).validate()){
+        if(new Validator.Singlevallidators.ArgumentValidator(Command).validate()){
             if(new PermissionValidator(Command).validate()){
                 return true;
             }

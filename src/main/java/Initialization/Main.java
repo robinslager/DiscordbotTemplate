@@ -12,13 +12,9 @@ import javax.security.auth.login.LoginException;
 
 public class Main  extends ListenerAdapter {
 
-
-    /*
-    start bot:
-
-     */
     public static void main(String[] args) throws LoginException {
-        new AddCommands();
+
+        new AddCommands().InitializeCommands();
         String Token = "INSERT KEY HERE";
         JDABuilder.createDefault(Token).setMemberCachePolicy(MemberCachePolicy.ALL).enableIntents(GatewayIntent.GUILD_MEMBERS).addEventListeners(new bot()).build();
     }

@@ -58,7 +58,7 @@ public class ArgumentValidator extends SingleValidator {
 
 
         // todo if there are more argument types than check for a type.
-        if (Command.getArgumentTypes_Allowed().length != 0) {
+        if (Command.getArgumentTypes_Allowed().length != 0 && Arguments != null) {
 
             // boolean that registers if 1 of the arguments does not match the allowed argument types
             boolean argumentcheck = true;
